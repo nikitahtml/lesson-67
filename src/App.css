@@ -5,3 +5,120 @@
   text-align: center;
 }
 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b3f45;
+  border: 2px solid #4a4e56;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  width: 300px;
+}
+
+.password-display {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: 2px solid #4a4e56;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #4a4e56;
+  color: #ffffff;
+}
+
+.password-display span {
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.password-display.valid {
+  border-color: #28a745;
+  background-color: #5cb85c;
+  color: #ffffff;
+}
+
+.password-display.invalid {
+  border-color: #dc3545;
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+.password-display .message {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.keypad button {
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: #4a4e56;
+  border: 2px solid #4a4e56;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  color: #ffffff;
+}
+
+.keypad button:hover {
+  background-color: #5a5e66;
+}
+
+.keypad button:active {
+  transform: scale(0.95);
+}
+
+.keypad button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.keypad button:nth-child(10) {
+  background-color: #f6c73a;
+}
+
+.keypad button:nth-child(10):hover {
+  background-color: #a3821f;
+}
+
+.keypad button:nth-child(10):active {
+  background-color: #d39e00;
+}
+
+.keypad button:nth-child(12) {
+  background-color: #28a745;
+}
+
+.keypad button:nth-child(12):hover {
+  background-color: #218838;
+}
+
+.keypad button:nth-child(12):active {
+  background-color: #1e7e34;
+}
